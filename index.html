@@ -1,0 +1,422 @@
+<!-- Document type declaration - tells the browser this is an HTML5 document -->
+<!DOCTYPE html>
+<!-- Root HTML element with language attribute set to English -->
+<html lang="en">
+<!-- Head section - contains metadata and links to external resources -->
+<head>
+    <!-- Character encoding for the document - UTF-8 supports all characters -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag - makes the site responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title that appears in browser tab -->
+    <title>Adwaith S A | Game Developer Portfolio</title>
+    
+    <!-- Script tag loading Tailwind CSS framework from CDN (Content Delivery Network) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link tag importing Google Fonts - Inter font family with different weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link tag importing Font Awesome icon library from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Script tag loading ScrollReveal animation library from CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link tag connecting external CSS stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<!-- Body element with Tailwind CSS classes: background slate-50 color, text slate-800 color -->
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header element with custom class, white text, shadow, sticky positioning, top-0, and z-index 50 -->
+    <header class="header-bg text-white shadow-lg sticky top-0 z-50">
+        <!-- Nav element with max-width 7xl, centered with auto margins, and responsive padding -->
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Flex container with items centered and height 16 (64px) -->
+            <div class="flex items-center justify-between h-16">
+                <!-- Anchor tag linking to home section with large bold text and custom color -->
+                <a href="#home" class="text-2xl font-extrabold primary-color tracking-tighter">
+                    <!-- Text content for logo -->
+                    Adwaith<!-- Span element with white text for second part of logo --><span class="text-white">.Dev</span>
+                </a>
+                
+                <!-- Navigation menu - hidden on mobile, flex on medium screens and up -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <!-- Anchor tag for About section with hover effect and transition -->
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <!-- Anchor tag for Skills section with hover effect and transition -->
+                    <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <!-- Anchor tag for Projects section with hover effect and transition -->
+                    <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <!-- Anchor tag for Contact section with hover effect and transition -->
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+
+                <!-- Mobile menu button - hidden on medium screens, visible on small screens -->
+                <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                    <!-- Font Awesome bars icon (hamburger menu) with extra-large size -->
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu div - hidden by default, only shows on mobile devices when toggled -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <!-- Div container with padding and spacing for menu items, centered text -->
+            <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+                <!-- Anchor tag for About in mobile menu - block display, padding, rounded corners, hover effect -->
+                <a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-700 transition">About</a>
+                <!-- Anchor tag for Skills in mobile menu - block display, padding, rounded corners, hover effect -->
+                <a href="#skills" class="block px-3 py-2 rounded-md hover:bg-slate-700 transition">Skills</a>
+                <!-- Anchor tag for Projects in mobile menu - block display, padding, rounded corners, hover effect -->
+                <a href="#projects" class="block px-3 py-2 rounded-md hover:bg-slate-700 transition">Projects</a>
+                <!-- Anchor tag for Contact in mobile menu - block display, padding, rounded corners, hover effect -->
+                <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-slate-700 transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About section with ID for navigation, max-width, padding, and top margin -->
+    <section id="about" class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-8">
+        
+        <!-- White background card with rounded corners, shadow, padding, flex layout, and gap -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 interactive-card">
+            
+            <!-- Text content div taking 3/5 width on medium screens -->
+            <div class="md:w-3/5">
+                <!-- Greeting text with large size, semi-bold weight, blue color, and bottom margin -->
+                <p class="text-lg font-semibold text-blue-600 mb-2">Hello, I'm</p>
+                <!-- Main heading with extra-large text, extra-bold weight, tight line height, and margin -->
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4">
+                    <!-- Name text content -->
+                    Adwaith S A
+                </h1>
+                <!-- Subheading with large text, light font weight, slate color, and margin -->
+                <h2 class="text-2xl md:text-3xl font-light text-slate-600 mb-6">
+                    <!-- Professional title text -->
+                    Game Developer & Full-Stack Programmer
+                </h2>
+                <!-- Paragraph with large text, slate color, bottom margin, and relaxed line spacing -->
+                <p class="text-lg text-slate-700 mb-8 leading-relaxed">
+                    <!-- Biography text with bold Unity text -->
+                    I am a passionate Game Developer making games in <strong>Unity</strong>. Beyond gaming, I am proficient in web and app development, Python scripting, and shell scripting in Kali Linux. My ultimate dream is to master Game Development or become a CyberSecurity Specialist.
+                </p>
+                
+                <!-- Flex container with wrapping enabled and gap between buttons -->
+                <div class="flex flex-wrap gap-4">
+                    <!-- Primary call-to-action button linking to projects section -->
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition shadow-lg">
+                        <!-- Button text -->
+                        View My Work
+                    </a>
+                    <!-- Secondary button linking to GitHub profile, opens in new tab -->
+                    <a href="https://github.com/Adwaith585" target="_blank" class="px-8 py-3 border-2 border-slate-200 text-slate-700 font-bold rounded-lg hover:bg-slate-100 transition shadow-sm">
+                        <!-- Font Awesome GitHub icon with right margin -->
+                        <i class="fab fa-github mr-2"></i><!-- Button text -->GitHub
+                    </a>
+                    <!-- Secondary button linking to LinkedIn profile, opens in new tab -->
+                    <a href="https://www.linkedin.com/in/adwaith-sa" target="_blank" class="px-8 py-3 border-2 border-blue-100 text-blue-700 font-bold rounded-lg hover:bg-blue-50 transition shadow-sm">
+                        <!-- Font Awesome LinkedIn icon with right margin -->
+                        <i class="fab fa-linkedin mr-2"></i><!-- Button text -->LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Image container div taking 2/5 width on medium screens, centered flex -->
+            <div class="md:w-2/5 flex justify-center">
+                
+                <!-- Circular container with fixed dimensions, rounded border, blue border, overflow hidden, shadow -->
+                <div class="w-64 h-64 rounded-full border-4 border-blue-500 overflow-hidden shadow-2xl interactive-card">
+                    
+                    <!-- Profile image with full width/height and object-cover for proper scaling -->
+                    <img src="images/profile.jpg" alt="Adwaith S A" class="w-full h-full object-cover">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section with ID, custom background class, padding all around -->
+    <section id="skills" class="secondary-bg py-20 px-4 sm:px-6 lg:px-8">
+        <!-- Container div with max-width and auto horizontal margins -->
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading level 2 with large text, extra-bold weight, centered, bottom margin -->
+            <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-12 sr-element">
+                <!-- Span with bottom border for underline effect and padding -->
+                <span class="border-b-4 border-blue-500 pb-1">Technical Skills</span>
+            </h2>
+
+            <!-- Grid container with responsive columns (2 on mobile, 3 on small, 5 on large) and gap -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                
+                <!-- Skill card with custom background, padding, rounded corners, centered text, shadow, interactive -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome Unity icon with large size, black color, bottom margin -->
+                    <i class="fab fa-unity text-5xl text-black mb-3"></i>
+                    <!-- Heading level 3 with bold font weight and slate color -->
+                    <h3 class="font-bold text-slate-900">Unity</h3>
+                </div>
+                <!-- Skill card for C#/C++ -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome code icon with large size, blue color, bottom margin -->
+                    <i class="fas fa-code text-5xl text-blue-600 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">C# / C++</h3>
+                </div>
+                <!-- Skill card for C language -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome microchip icon with large size, slate color, bottom margin -->
+                    <i class="fas fa-microchip text-5xl text-slate-600 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">C</h3>
+                </div>
+                <!-- Skill card for Python -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome Python icon with large size, yellow color, bottom margin -->
+                    <i class="fab fa-python text-5xl text-yellow-500 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">Python</h3>
+                </div>
+                <!-- Skill card for Java -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome Java icon with large size, red color, bottom margin -->
+                    <i class="fab fa-java text-5xl text-red-500 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">Java</h3>
+                </div>
+                
+                <!-- Skill card for HTML5 -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome HTML5 icon with large size, orange color, bottom margin -->
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">HTML5</h3>
+                </div>
+                <!-- Skill card for CSS3 -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome CSS3 icon with large size, blue color, bottom margin -->
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">CSS3</h3>
+                </div>
+                <!-- Skill card for JavaScript -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome JavaScript icon with large size, yellow color, bottom margin -->
+                    <i class="fab fa-js text-5xl text-yellow-400 mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">JavaScript</h3>
+                </div>
+                <!-- Skill card for Kali Linux -->
+                <div class="card-bg p-6 rounded-xl text-center shadow-lg interactive-card sr-card">
+                    <!-- Font Awesome Linux icon with large size, black color, bottom margin -->
+                    <i class="fab fa-linux text-5xl text-black mb-3"></i>
+                    <!-- Heading text -->
+                    <h3 class="font-bold text-slate-900">Kali Linux</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section with ID, max-width, vertical and horizontal padding -->
+    <section id="projects" class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
+        <!-- Section heading with large text, extra-bold weight, centered, bottom margin -->
+        <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-12 sr-element">
+            <!-- Span with bottom border decoration -->
+            <span class="border-b-4 border-blue-500 pb-1">Featured Projects</span>
+        </h2>
+
+        <!-- Container div with vertical spacing between project cards -->
+        <div class="space-y-12">
+            
+            <!-- First project card - LIFE-OF-CUBE -->
+            <div class="card-bg p-8 rounded-2xl shadow-lg interactive-card sr-project flex flex-col md:flex-row gap-8 border border-slate-100">
+                <!-- Image placeholder div taking 1/3 width on medium screens, gray background, rounded, centered flex -->
+                <div class="md:w-1/3 bg-slate-100 rounded-xl flex items-center justify-center h-48">
+                    <!-- Font Awesome cube icon with extra-large size and blue color -->
+                    <i class="fas fa-cube text-6xl text-blue-400"></i>
+                </div>
+                <!-- Project details div taking 2/3 width on medium screens -->
+                <div class="md:w-2/3">
+                    <!-- Project title heading with large text, bold weight, blue color, bottom margin -->
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">1. LIFE-OF-CUBE</h3>
+                    <!-- Project description paragraph with slate color and bottom margin -->
+                    <p class="text-slate-600 mb-4">A game about a cube travelling over a place, dodging obstacles, avoiding falling off the platform, and finishing multiple levels.</p>
+                    <!-- Flex container with wrapping and gap for technology tags -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <!-- Technology tag with blue background, blue text, extra-small size, padding, rounded -->
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">GameDev</span>
+                        <!-- Technology tag for Unity -->
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Unity</span>
+                    </div>
+                    <!-- GitHub link anchor opening in new tab with hover effect -->
+                    <a href="https://github.com/Adwaith585/LIFE-OF-CUBE" target="_blank" class="text-slate-800 font-bold hover:text-blue-600 transition">
+                        <!-- Font Awesome GitHub icon with right margin -->
+                        <i class="fab fa-github mr-2"></i><!-- Link text -->View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second project card - JotterBean with reversed flex direction -->
+            <div class="card-bg p-8 rounded-2xl shadow-lg interactive-card sr-project flex flex-col md:flex-row-reverse gap-8 border border-slate-100">
+                <!-- Image placeholder div with green edit icon -->
+                <div class="md:w-1/3 bg-slate-100 rounded-xl flex items-center justify-center h-48">
+                    <!-- Font Awesome edit icon with extra-large size and green color -->
+                    <i class="fas fa-edit text-6xl text-green-400"></i>
+                </div>
+                <!-- Project details div -->
+                <div class="md:w-2/3">
+                    <!-- Project title -->
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">2. JotterBean</h3>
+                    <!-- Project description -->
+                    <p class="text-slate-600 mb-4">A simple text editor application built using Java which features a database connection for saving notes.</p>
+                    <!-- Technology tags container -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <!-- Java tag with green styling -->
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Java</span>
+                        <!-- Database tag with green styling -->
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Database</span>
+                    </div>
+                    <!-- GitHub repository link -->
+                    <a href="https://github.com/Adwaith585/JotterBean" target="_blank" class="text-slate-800 font-bold hover:text-blue-600 transition">
+                        <!-- GitHub icon -->
+                        <i class="fab fa-github mr-2"></i><!-- Link text -->View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Third project card - Push-UP-Counter -->
+            <div class="card-bg p-8 rounded-2xl shadow-lg interactive-card sr-project flex flex-col md:flex-row gap-8 border border-slate-100">
+                <!-- Image placeholder with running icon -->
+                <div class="md:w-1/3 bg-slate-100 rounded-xl flex items-center justify-center h-48">
+                    <!-- Font Awesome running icon with red color -->
+                    <i class="fas fa-running text-6xl text-red-400"></i>
+                </div>
+                <!-- Project details -->
+                <div class="md:w-2/3">
+                    <!-- Project title -->
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">3. Push-UP-Counter</h3>
+                    <!-- Project description -->
+                    <p class="text-slate-600 mb-4">A simple movement tracking application that counts your push-ups automatically.</p>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/Adwaith585/Push-UP-Counter" target="_blank" class="text-slate-800 font-bold hover:text-blue-600 transition">
+                        <!-- GitHub icon -->
+                        <i class="fab fa-github mr-2"></i><!-- Link text -->View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fourth project card - VentureVision Pro with reversed layout -->
+            <div class="card-bg p-8 rounded-2xl shadow-lg interactive-card sr-project flex flex-col md:flex-row-reverse gap-8 border border-slate-100">
+                <!-- Image placeholder with robot icon -->
+                <div class="md:w-1/3 bg-slate-100 rounded-xl flex items-center justify-center h-48">
+                    <!-- Font Awesome robot icon with purple color -->
+                    <i class="fas fa-robot text-6xl text-purple-400"></i>
+                </div>
+                <!-- Project details -->
+                <div class="md:w-2/3">
+                    <!-- Project title -->
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">4. VentureVision Pro</h3>
+                    <!-- Project description -->
+                    <p class="text-slate-600 mb-4">An autonomous AI agent designed to automate the grueling process of Venture Capital due diligence.</p>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/Adwaith585/VentureVision-Pro" target="_blank" class="text-slate-800 font-bold hover:text-blue-600 transition">
+                        <!-- GitHub icon -->
+                        <i class="fab fa-github mr-2"></i><!-- Link text -->View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fifth project card - GeometryDash -->
+            <div class="card-bg p-8 rounded-2xl shadow-lg interactive-card sr-project flex flex-col md:flex-row gap-8 border border-slate-100">
+                <!-- Image placeholder with shapes icon -->
+                <div class="md:w-1/3 bg-slate-100 rounded-xl flex items-center justify-center h-48">
+                    <!-- Font Awesome shapes icon with yellow color -->
+                    <i class="fas fa-shapes text-6xl text-yellow-400"></i>
+                </div>
+                <!-- Project details -->
+                <div class="md:w-2/3">
+                    <!-- Project title -->
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">5. GeometryDash</h3>
+                    <!-- Project description -->
+                    <p class="text-slate-600 mb-4">A simple movement tracking application inspired by the classic game.</p>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/The-Akarsh/YessporaGeometryDash" target="_blank" class="text-slate-800 font-bold hover:text-blue-600 transition">
+                        <!-- GitHub icon -->
+                        <i class="fab fa-github mr-2"></i><!-- Link text -->View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with ID, custom background, padding, and top margin -->
+    <section id="contact" class="secondary-bg py-20 px-4 sm:px-6 lg:px-8 mt-12">
+        <!-- Container with max-width (extra-large), auto margins, centered text -->
+        <div class="max-w-xl mx-auto text-center">
+            <!-- Section heading with large text, extra-bold weight, bottom margin -->
+            <h2 class="text-4xl font-extrabold text-slate-900 mb-4 sr-element">
+                <!-- Heading text -->
+                Get In Touch
+            </h2>
+            <!-- Subtitle paragraph with large text, slate color, bottom margin -->
+            <p class="text-lg text-slate-600 mb-10 sr-element">
+                <!-- Subtitle text -->
+                I'm currently open to new opportunities and exciting collaborations.
+            </p>
+
+            <!-- Container div with vertical spacing between contact cards -->
+            <div class="space-y-6">
+                <!-- Email contact card with custom background, padding, rounded corners, shadow -->
+                <div class="card-bg p-6 rounded-xl shadow-lg interactive-card sr-contact">
+                    <!-- Font Awesome envelope icon with large size, custom primary color, bottom margin -->
+                    <i class="fas fa-envelope text-3xl primary-color mb-3"></i>
+                    <!-- Label paragraph with extra-large text, semi-bold weight, bottom margin -->
+                    <p class="text-xl font-semibold mb-1">Email</p>
+                    <!-- Email link (mailto) with blue color and hover effect -->
+                    <a href="mailto:adwaithcea@gmail.com" class="text-blue-600 hover:text-blue-800 transition">adwaithcea@gmail.com</a>
+                </div>
+                <!-- GitHub contact card -->
+                <div class="card-bg p-6 rounded-xl shadow-lg interactive-card sr-contact">
+                    <!-- Font Awesome GitHub icon with large size, slate color, bottom margin -->
+                    <i class="fab fa-github text-3xl text-slate-900 mb-3"></i>
+                    <!-- Label paragraph -->
+                    <p class="text-xl font-semibold mb-1">GitHub</p>
+                    <!-- GitHub profile link opening in new tab -->
+                    <a href="https://github.com/Adwaith585" target="_blank" class="text-blue-600 hover:text-blue-800 transition">github.com/Adwaith585</a>
+                </div>
+                <!-- LinkedIn contact card -->
+                <div class="card-bg p-6 rounded-xl shadow-lg interactive-card sr-contact">
+                    <!-- Font Awesome LinkedIn icon with large size, blue color, bottom margin -->
+                    <i class="fab fa-linkedin text-3xl text-blue-700 mb-3"></i>
+                    <!-- Label paragraph -->
+                    <p class="text-xl font-semibold mb-1">LinkedIn</p>
+                    <!-- LinkedIn profile link opening in new tab -->
+                    <a href="https://www.linkedin.com/in/adwaith-sa" target="_blank" class="text-blue-600 hover:text-blue-800 transition">
+                        <!-- Link text -->
+                        Connect with me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer element with custom header background class, white text, vertical padding, top margin -->
+    <footer class="header-bg text-white py-8 mt-12">
+        <!-- Container with max-width, auto margins, padding, centered text -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Paragraph with small text and gray color -->
+            <p class="text-sm text-gray-400">
+                <!-- Copyright symbol -->
+                &copy; <!-- Span element with ID for dynamic year insertion -->
+                <span id="current-year"></span> <!-- Copyright text -->
+                Adwaith S A. Built with HTML, Tailwind CSS, and GitHub Pages.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script tag with defer attribute (loads after HTML parsing) linking to external JavaScript file -->
+    <script defer src="scripts/main.js"></script>
+</body>
+</html>
