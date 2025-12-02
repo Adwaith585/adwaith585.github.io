@@ -1,0 +1,163 @@
+/* Opening slash-asterisk starts a multi-line comment in CSS */
+/* This is a comment explaining the purpose of this section */
+/* Custom CSS Overrides - these styles override or extend Tailwind CSS defaults */
+/* Closing asterisk-slash ends the multi-line comment */
+
+/* 'body' is a type selector targeting the HTML body element */
+body { /* Opening curly brace starts the declaration block */
+    /* 'font-family' is a CSS property that specifies the font for text */
+    /* The colon separates the property name from its value */
+    /* 'Inter' is the primary font (must match the name from Google Fonts) */
+    /* Single quotes around 'Inter' are necessary because it's a specific font name */
+    /* The comma separates multiple font options (fallback fonts) */
+    /* 'sans-serif' is a generic font family used if 'Inter' is not available */
+    /* The semicolon ends this CSS declaration */
+    font-family: 'Inter', sans-serif; 
+} /* Closing curly brace ends the declaration block for body */
+
+/* 'html' is a type selector targeting the root HTML element */
+html { /* Opening curly brace starts the declaration block */
+    /* 'scroll-behavior' is a CSS property controlling scrolling animation */
+    /* Colon separates property from value */
+    /* 'smooth' is a keyword value that enables smooth scrolling transitions */
+    /* This makes anchor link navigation animate smoothly instead of jumping instantly */
+    /* Semicolon ends the declaration */
+    scroll-behavior: smooth; 
+} /* Closing curly brace ends the html rule */
+
+/* Opening comment delimiter */
+/* Theme Colors - organizational comment grouping color-related styles */
+/* Closing comment delimiter */
+
+/* Period indicates this is a class selector */
+/* 'header-bg' is the class name that matches elements with class="header-bg" */
+.header-bg { /* Opening curly brace */
+    /* 'background-color' is the CSS property for setting background color */
+    /* Colon separates property name from value */
+    /* Hash symbol indicates a hexadecimal color code */
+    /* '0f172a' is a 6-character hex code representing RGB values */
+    /* '0f' = red channel, '17' = green channel, '2a' = blue channel */
+    /* This creates a dark slate/navy blue color */
+    /* Semicolon ends the declaration */
+    background-color: #0f172a; /* Inline comment: Dark Slate color description */
+} /* Closing curly brace */
+
+/* Period indicates class selector */
+/* 'primary-color' is the class name */
+.primary-color { /* Opening curly brace */
+    /* 'color' is the CSS property for setting text color */
+    /* Colon separates property from value */
+    /* Hash symbol starts hexadecimal color code */
+    /* '3b82f6' represents a bright blue color in hexadecimal */
+    /* '3b' = red, '82' = green, 'f6' = blue channels */
+    /* Semicolon ends declaration */
+    color: #3b82f6; /* Inline comment: Bright Blue */
+} /* Closing curly brace */
+
+/* Period for class selector */
+/* 'secondary-bg' is the class name */
+.secondary-bg { /* Opening curly brace */
+    /* 'background-color' property for background color */
+    /* Colon separator */
+    /* Hash symbol for hex color */
+    /* 'f8fafc' is a very light gray/off-white color */
+    /* 'f8' = red, 'fa' = green, 'fc' = blue */
+    /* Semicolon ends declaration */
+    background-color: #f8fafc; /* Inline comment: Off White */
+} /* Closing curly brace */
+
+/* Period for class selector */
+/* 'card-bg' is the class name for card backgrounds */
+.card-bg { /* Opening curly brace */
+    /* 'background-color' property */
+    /* Colon separator */
+    /* Hash symbol for hex color */
+    /* 'ffffff' represents pure white (maximum RGB values) */
+    /* 'ff' = 255 red, 'ff' = 255 green, 'ff' = 255 blue */
+    /* Semicolon ends declaration */
+    background-color: #ffffff; 
+} /* Closing curly brace */
+
+/* Opening comment */
+/* 3D Lift Effect - describes the visual effect applied to interactive cards */
+/* Closing comment */
+
+/* Period for class selector */
+/* 'interactive-card' is the class name */
+.interactive-card { /* Opening curly brace */
+    /* 'transition' is a shorthand CSS property for smooth animations */
+    /* Colon separates property from value */
+    /* 'all' is a keyword meaning all CSS properties will be animated */
+    /* Space separates the property name from duration */
+    /* '0.3s' means 0.3 seconds (300 milliseconds) duration */
+    /* 's' is the unit for seconds */
+    /* Space separates duration from timing function */
+    /* 'cubic-bezier' is a timing function keyword for custom easing curves */
+    /* Opening parenthesis starts the cubic-bezier parameters */
+    /* '0.4' is the first control point x-coordinate */
+    /* Comma separates parameters */
+    /* '0' is the first control point y-coordinate */
+    /* Comma separator */
+    /* '0.2' is the second control point x-coordinate */
+    /* Comma separator */
+    /* '1' is the second control point y-coordinate */
+    /* Closing parenthesis ends cubic-bezier parameters */
+    /* These four numbers create a smooth acceleration/deceleration curve */
+    /* Semicolon ends declaration */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+} /* Closing curly brace */
+
+/* Period for class selector */
+/* 'interactive-card' is the base class */
+/* Colon indicates a pseudo-class */
+/* 'hover' is a pseudo-class that activates when mouse cursor is over the element */
+/* This combines to select interactive-card elements only during hover state */
+.interactive-card:hover { /* Opening curly brace */
+    /* 'transform' is a CSS property for 2D/3D transformations */
+    /* Colon separates property from value */
+    /* 'translateY' is a transform function for vertical movement */
+    /* Opening parenthesis starts translateY parameters */
+    /* Minus sign makes the movement negative (upward) */
+    /* '8' is the numeric value */
+    /* 'px' is the unit (pixels) */
+    /* Closing parenthesis ends translateY */
+    /* Space separates multiple transform functions */
+    /* 'scale' is a transform function for resizing */
+    /* Opening parenthesis starts scale parameters */
+    /* '1.01' means scale to 101% of original size (1% larger) */
+    /* Closing parenthesis ends scale */
+    /* Semicolon ends declaration */
+    transform: translateY(-8px) scale(1.01);
+    
+    /* 'box-shadow' is a CSS property for creating shadow effects */
+    /* Colon separates property from value */
+    /* First shadow values: */
+    /* '0' is horizontal offset (no horizontal movement) */
+    /* Space separates values */
+    /* '20px' is vertical offset (shadow goes down 20 pixels) */
+    /* Space separator */
+    /* '25px' is blur radius (how blurry the shadow is) */
+    /* Space separator */
+    /* Minus sign makes spread negative */
+    /* '5px' is spread radius (shrinks shadow by 5px) */
+    /* Space separator */
+    /* 'rgba' is a color function for red-green-blue-alpha */
+    /* Opening parenthesis starts rgba parameters */
+    /* '0' is red channel value (0-255) */
+    /* Comma separates parameters */
+    /* '0' is green channel value */
+    /* Comma separator */
+    /* '0' is blue channel value (0,0,0 = black) */
+    /* Comma separator */
+    /* '0.1' is alpha/opacity (0=transparent, 1=opaque, so 0.1=10% visible) */
+    /* Closing parenthesis ends rgba */
+    /* Comma separates multiple shadows */
+    /* Second shadow values: */
+    /* '0' horizontal offset */
+    /* '10px' vertical offset */
+    /* '10px' blur radius */
+    /* '-5px' spread radius (negative shrinks) */
+    /* 'rgba(0, 0, 0, 0.04)' black color at 4% opacity */
+    /* Semicolon ends declaration */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+} /* Closing curly brace ends the hover rule */
